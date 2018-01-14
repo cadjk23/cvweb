@@ -1,0 +1,222 @@
+body
+{
+	font-family: Calibri;
+	margin: 0px;
+
+	background-color: #F2F2F2;
+}
+
+@media screen and (max-width: 1024px)
+{
+    h1
+    {
+        /*color: red;*/
+    }
+
+    .Conteneur
+    {
+    	flex-wrap: nowrap;
+    }
+
+    .Hobbies, .Langues, .Info, .exp_nopro, .exp_pro, .parcours
+	{
+		margin-bottom: 45px;
+		margin-top: 45px;
+		margin-left: 15px;
+		margin-right: 15px;
+		width: auto;
+
+	}
+
+    body
+    {
+    	width: auto;
+    }
+}
+
+@media handheld
+{
+	h1
+	{
+		/*color: blue;*/
+	}
+
+	.Conteneur
+	{
+		flex-wrap: nowrap;
+	}
+
+	.Hobbies, .Langues, .Info, .exp_nopro, .exp_pro, .parcours
+	{
+		margin-bottom: 45px;
+		margin-top: 45px;
+		width: auto;
+	}
+	
+
+}
+
+header
+{
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 0px;
+}
+
+
+.Titre
+{	
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 4px solid black;
+	border-bottom:  4px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	margin-bottom: 20px;
+	transition-property: opacity;
+	transition-duration: 0.1s;
+	text-align: center;
+}
+
+.Conteneur
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: column;
+    height: 950px;
+}
+
+
+.parcours
+{
+	margin: auto;
+	width:400px;
+	padding: 50px;
+	height: 150px;
+	background-image: url(../Vrai_CV/parcour.jpg);
+	background-size: cover;
+	border-radius: 2px;
+	opacity: 0.75;
+}
+
+.exp_pro
+{
+	border-radius: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: 0px;
+	width:400px;
+	height: 150px;
+	padding: 50px;
+	background-image: url(../Vrai_CV/experiencepro.jpg);
+	background-size: cover;
+}
+
+.exp_nopro
+{
+	border-radius: 2px;
+	margin: auto;
+	width:400px;
+	padding: 50px;
+	height: 150px;
+	margin-bottom: 45px;
+	background-image: url(../Vrai_CV/extra_pro.jpg);
+	background-size: cover;
+}
+
+
+.Info
+{
+	border-radius: 2px;
+	margin: auto;
+	padding: 50px;
+	width:400px;
+	height: 150px;
+	background-image: url(../Vrai_CV/exp_pro.jpg);
+	background-size: cover;
+}
+
+
+
+.Langues
+{
+	border-radius: 2px;
+	margin: auto;
+	width:400px;
+	height: 150px;
+	padding: 50px;
+	background-image: url(../Vrai_CV/langues.jpg);
+	background-size: cover;
+}
+
+
+.Hobbies
+{
+	border-radius: 2px;
+	margin: auto;
+	margin-bottom: 45px;
+	padding: 50px;
+	width:400px;
+	height: 150px;
+	background-image: url(../Vrai_CV/Hobbies.jpg);
+	background-size: cover;
+}
+
+.Hobbies:hover, .Langues:hover, .Info:hover, .exp_nopro:hover, .parcours:hover, .exp_pro:hover
+{
+	width: 390px;
+	opacity: 0.5;
+}
+
+
+.Hobbies, .Langues, .Info, .exp_nopro, .exp_pro, .parcours
+{
+	transition-property: opacity, width;
+	transition-duration: 0.65s;
+	opacity: 0.70;
+	
+}
+
+p
+{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 0 0 6px white;
+}
+
+.Titre:hover
+{
+	opacity: 0.5;
+}
+
+.fleche
+{
+	width: 20px;
+	transition-duration: 0.5s;
+	transition-property: opacity;
+}
+
+footer
+{
+	position: absolute;
+    bottom: 0;
+    width: 20px
+    top: 50%; 
+    left: 50%;
+}
+
+.fleche:hover
+{
+	opacity: 0.5	
+}
